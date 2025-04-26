@@ -103,4 +103,4 @@ This project is licensed under the MIT License — feel free to use, fork, and i
 In consulting, presentation is everything.
 This tool helps ensure your proposals are structured, client-centric, and visually consistent — giving you a competitive edge, and saving hours of manual checking.
 
-"Good proposals win deals. Great proposals build long-term clients."
+### "Good proposals win deals. Great proposals build long-term clients."
