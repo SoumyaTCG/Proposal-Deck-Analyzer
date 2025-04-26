@@ -58,9 +58,9 @@ cd consulting-proposal-quality-checker
 
 ```bash
 pip install -r requirements.txt
-Launch the application
+
 ```
-3. Command Line Mode
+3. Launch the application
 
 ```bash
 python main.py
