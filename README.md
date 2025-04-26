@@ -27,15 +27,39 @@ Just upload your .pptx file and instantly receive a downloadable feedback report
 
 ## 🏗️ Project Architecture
 ``` bash
-proposal_quality_checker/
-├── agents/               # (Optional) Agent-like extensions for modular orchestration
-├── schemas/              # Pydantic models for data validation
-├── services/             # Business logic (file parsing, NLP analysis, visual checker)
-├── utils/                # Helper modules (title detection, scoring, PDF generator)
-├── streamlit_app/        # Front-end app using Streamlit
-├── main.py               # Driver script (CLI mode)
-├── requirements.txt      # Python dependencies
-└── README.md             # You're reading it!
+consulting_proposal_quality_checker/
+├── agents/                     # (Optional) Future agent orchestration (if you want later)
+│   └── __init__.py
+│
+├── schemas/                    # Pydantic models for input/output
+│   ├── slide_schema.py
+│   └── __init__.py
+│
+├── services/                   # Business logic / Core services
+│   ├── slide_parser.py         # Extract text & titles from slides
+│   ├── section_mapper.py       # Map slide titles to consulting sections
+│   ├── structure_analyzer.py   # Check if key sections exist
+│   ├── visual_analyzer.py      # Check fonts, layouts, design consistency
+│   ├── client_fit_analyzer.py  # Analyze language and industry relevance
+│   ├── score_aggregator.py     # Multi-dimensional score calculation
+│   └── report_generator.py     # PDF feedback generation
+│
+├── utils/                      # Helper utilities
+│   ├── title_detector.py       # Detect titles automatically
+│   ├── pdf_utils.py             # Helper to format PDFs
+│   └── __init__.py
+│
+├── streamlit_app/              # Frontend folder
+│   ├── app.py                  # Streamlit app
+│   └── __init__.py
+│
+├── outputs/                    # Generated output PDFs
+│   └── (Generated reports will be saved here)
+│
+├── main.py                     # CLI interface to run everything
+├── requirements.txt            # Project dependencies
+└── README.md                   # Project documentation
+
 ```
 
 ## 🛠️ Built With-
