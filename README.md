@@ -27,8 +27,6 @@ Just upload your .pptx file and instantly receive a downloadable feedback report
 
 ## 🏗️ Project Architecture
 ``` bash
-Copy
-Edit
 proposal_quality_checker/
 ├── agents/               # (Optional) Agent-like extensions for modular orchestration
 ├── schemas/              # Pydantic models for data validation
